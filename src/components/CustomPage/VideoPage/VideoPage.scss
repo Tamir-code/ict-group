@@ -1,0 +1,54 @@
+.videoPage{
+    background-color: #000000;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    .video-box{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform-origin: 50% 50%;
+        z-index: 1;
+        video{
+            position: relative;
+            border-radius: 20px;
+            border: 50px solid #191919;
+            &::after{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: #000000;
+                opacity: 0.5;
+            }
+        }
+    }
+    .caption-box{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        h1{
+            font-size: 28px;
+            letter-spacing: 4px;
+            color: #ffffff;
+            text-align: center;
+        }
+        p{
+            color: #ffffff;
+        }
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+        background-image: url('http://ictexpo.mn/cdn/Poly2-01.svg');
+    }
+}

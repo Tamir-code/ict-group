@@ -1,0 +1,283 @@
+.time{
+  text-align: center;
+}
+    .count-desk{
+      display: block;
+    }
+    .count-mobile{
+      display: none;
+    }
+  .count-wrap{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .count-desk{
+      width: 100%;
+      .c-desk-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-items: center;
+      }
+    }
+  }
+.count-new{
+  .count-main{
+    .new-count-section{
+        display: flex;
+        .Clock-days, .Clock-hours, .Clock-minutes, .Clock-seconds{
+          margin: 0 30px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          border: 3px solid #ac0b62;
+          border-radius: 100%;
+          width: 160px;
+          height: 160px;
+        }
+        .c-number{
+          font-size: 22px;
+        }
+        .c-title{
+          text-transform: uppercase;
+          font-size: 14px;
+        }
+    }
+  }
+}
+.plan-pop{
+  .c-desk-grid{
+    display: flex;
+  }
+}
+.plan-img-box{
+  width: 100%;
+    img{
+      width: 100%;
+    }
+}
+.modal-dialog{
+  max-width: 1200px;
+}
+.modal-content{
+  border-radius: unset;
+  border: unset;
+}
+.coming-soon{
+  display: flex;
+  align-items: center;
+  font-family: Roboto, sans-serif;
+  color: #fff;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: #35075e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #35075e, #001236); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #35075e, #001236);
+
+
+  .b1{
+    z-index: 2;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+    .b1-right{
+      .c-btn{
+        display: flex;
+        align-items: center;
+        .btn-danger.focus, .btn-danger:focus{
+          box-shadow: unset;
+        }
+        .btn-danger{
+          background-color: #ab0b63;
+          border-color: unset;
+        }
+        .btn{
+          border: unset;
+          border-radius: unset;
+          text-transform: uppercase;
+          padding: 20px 20px;
+          text-align: center;
+          font-size: 13px;
+          font-weight: 500;
+          color: #fff;
+          transition: all 0.3s ease-in-out;
+          &:hover{
+            text-decoration: unset;
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+    .b1-left{
+      a{
+        display: block;
+        cursor: pointer;
+      }
+      img{
+        width: 250px;
+        padding: 20px 30px;
+      }
+    }
+  }
+  .header{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 50px 0;
+    .left-sec{
+      .logo-center{
+        img{
+          width: 400px;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+    .right-sec{
+
+    }
+  }
+
+  .description{
+    h1{
+      font-size: 22px;
+      line-height: 36px;
+      letter-spacing: 2px;
+      color: #fff;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 0;
+      padding: 40px 0;
+    }
+    p{
+      color: #fff;
+    }
+  }
+  .count-section{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    .container-m{
+      min-width: 760px;
+    }
+
+    .time-wrapper{
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 12px;
+      .time{
+        font-size: 22px;
+      }
+    }
+
+  }
+  canvas{
+    z-index: 1 !important;
+  }
+
+
+
+
+}
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .count-wrap{
+    justify-content: center;
+  }
+  .count-new .count-main .new-count-section .Clock-days, .count-new .count-main .new-count-section .Clock-hours, .count-new .count-main .new-count-section .Clock-minutes, .count-new .count-main .new-count-section .Clock-secondsK{
+    width: 100px;
+    height: 100px;
+    margin: 0 10px;
+  }
+  .count-new .count-main .new-count-section .Clock-days, .count-new .count-main .new-count-section .Clock-hours, .count-new .count-main .new-count-section .Clock-minutes, .count-new .count-main .new-count-section .Clock-seconds{
+    width: 100px;
+    height: 100px;
+    margin: 0 10px;
+  }
+}
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+  .count-new .count-main .new-count-section .Clock-days, .count-new .count-main .new-count-section .Clock-hours, .count-new .count-main .new-count-section .Clock-minutes, .count-new .count-main .new-count-section .Clock-secondsK{
+    width: 60px;
+    height: 60px;
+    margin: 0 10px;
+  }
+  .count-wrap{
+    justify-content: center;
+  }
+  .count-new .count-main .new-count-section .Clock-days, .count-new .count-main .new-count-section .Clock-hours, .count-new .count-main .new-count-section .Clock-minutes, .count-new .count-main .new-count-section .Clock-seconds{
+    width: 60px;
+    height: 60px;
+    margin: 0 10px;
+  }
+  .count-new .count-main .new-count-section .c-number{
+    font-size: 14px;
+  }
+  .count-new .count-main .new-count-section .c-title{
+    font-size: 10px;
+  }
+  .count-desk{
+    display: none;
+  }
+  .count-mobile{
+    width: 100%;
+    display: block;
+  }
+  .count-wrap{
+    .count-mobile{
+      .c-mobile-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-items: center;
+      }
+    }
+
+  }
+  .time-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 10px;
+  }
+  .coming-soon{
+
+    .header .left-sec .logo-center img{
+      width: 200px;
+    }
+    .description{
+      h1{
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+    .count-section{
+      .container-m{
+        min-width: 100%;
+
+      }
+    }
+  }
+
+  .coming-soon .b1 .b1-right .c-btn a{
+    font-size: 10px;
+    padding: 10px 15px;
+  }
+  .coming-soon .b1 .b1-left img{
+    width: 150px;
+    padding: 10px 10px;
+  }
+  .coming-soon .count-section .time-wrapper .time{
+    font-size: 14px;
+  }
+  .coming-soon .count-section .time-wrapper{
+    font-size: 8px;
+  }
+
+
+}

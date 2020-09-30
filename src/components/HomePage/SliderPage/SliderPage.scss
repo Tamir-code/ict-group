@@ -1,0 +1,62 @@
+.homeSlider{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    // background-image: url('http://ictexpo.mn/cdn/viber_image_2020-09-27_13-41-19.jpg');
+    background: #000;
+    // background: -webkit-gradient(linear,left top,right top,from(#35075e),to(#001236));
+    // background: linear-gradient(145deg, #03053a, #860942);
+    iframe{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        border: unset;
+
+    }
+    .sliderCaption{
+        position: absolute;
+        top: 50%;
+        left: 5vw;
+        width: 50%;
+        transform: translateY(-50%);
+        h1{
+            color: #ffffff;
+            font-weight: 500;
+            font-size: 96px;
+            letter-spacing: 6px;
+        }
+    }
+    &::before{
+        position: absolute;
+        content: "";
+        height: 30%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: linear-gradient(to bottom, #020208 0%, #020208 20%, rgba(2, 2, 8, 0) 92%);
+        z-index: 1;
+    }
+    &::after{
+        position: absolute;
+        content: "";
+        height: 50%;
+        width: 100%;
+        /* top: 0; */
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(to top, #000 0%, #020208 30%, rgba(2, 2, 8, 0) 92%);
+        z-index: 1;
+    }
+
+    .home-svg{
+        position: absolute;
+        left: 50%;
+        bottom: 12%;
+        transform: translateX(-50%);
+        z-index: 9;
+        img{
+            width: 60px;
+        }
+    }
+}

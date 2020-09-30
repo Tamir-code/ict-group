@@ -1,0 +1,54 @@
+.planPage{
+    position: relative;
+    background-color: #000000;
+    .grid-col{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        .left-col{
+            .img-box{
+                overflow: hidden;
+                
+                width: 100%;
+                img{
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+        .right-col{
+            padding-right: 100px;
+            .content-box{
+                margin-left: 60px;
+                h1{
+                    font-size: 4.25rem;
+                    line-height: 1.2;
+                    color: #ffffff;
+                    letter-spacing: 2px;
+                }
+                p{
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #ffffff;
+                    letter-spacing: 2px;
+                }
+                a{
+                    display: block;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #ffffff;
+
+                }
+                .more-btn{
+                    margin-top: 60px;
+                    background-color: transparent;
+                    border: 1px solid #ffffff;
+                    width: fit-content;
+                    padding: 15px 25px;
+                    text-align: center;
+                    border-radius: 3.75rem;
+                }
+            }
+        }   
+    }
+}

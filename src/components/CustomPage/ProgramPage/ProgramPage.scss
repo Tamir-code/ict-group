@@ -1,0 +1,270 @@
+.programPage{
+    // background: linear-gradient(90deg, rgba(9, 3, 106, 0.9) 19%, rgba(144, 13, 122, 0.9) 100%);
+    background: #000;
+    width: 100%;
+    .headerPage .logoWidget img{
+        display: none;
+    }
+    .page-header{
+        overflow: hidden;
+        position: relative;
+        background: #000000;
+        max-width: 100%;
+        // background-image: url('http://ictexpo.mn/cdn/viber_image_2020-09-26_03-09-40.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        &::before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+
+            
+        }
+        &::after{
+            position: absolute;
+            content: "";
+            height: 50%;
+            width: 100%;
+            /* top: 0; */
+            bottom: 0;
+            left: 0;
+            background: linear-gradient(to top, #000 0%, #020208 30%, rgba(2, 2, 8, 0) 92%);
+            z-index: 1;
+        }
+        iframe{
+            width: 100%;
+            height: 100%;
+            border: unset;
+        }
+        video{
+            width: 100%;
+        }
+        .caption-box{
+            top: 70%;
+            width: 60%;
+            margin: 0 auto;
+            z-index: 2;
+            h2{
+                text-align: center;
+                font-size: 56px;
+                font-weight: bold;
+                color: rgb(184, 10, 97);
+                margin: 0;
+            }
+            h1{
+                text-align: center;
+                font-size: 72px;
+                margin: 0;
+                padding: 20px 0;
+            }
+            p{
+                padding: 0 100px;
+                margin: 0;
+            }
+        }
+    }
+    .header-category{
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        .col-box{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            .cat-title{
+                padding: 30px;
+                h1{
+                    text-align: center;
+                    font-size: 56px;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+    .grid-container{
+        padding: 0 0px;
+
+        .body-box{
+            .grid-col{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 0px;
+                .l-sec{
+                    .title{
+                        h1{
+                            font-size: 48px;
+                            margin-bottom: 40px;
+                            text-transform: uppercase;
+                        }
+                    }
+                    h1{
+                        font-size: 16px;
+                        margin-bottom: 15px;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                    .sec1{
+                        background: #000;
+                        padding: 50px 100px 50px 100px;
+                        .logo-box{
+                            p{
+                                font-size: 18px;
+                                text-align: justify;
+                                color: #aaa;
+                            }
+                        }
+                        .desc-box{
+                            color: #eee;
+                            width: 100%;
+                            .desc-widget{
+                                display: grid;
+                                grid-template-columns: 20% 1fr 1fr;
+                                grid-gap: 30px;
+                                padding: 40px 0;
+                                border-bottom: 1px solid #171717;
+                                .w-box{
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    .event-time{
+                                        p{
+                                            font-size: 16px;
+                                            color: #ccc;
+                                            font-weight: bold;
+                                            margin-bottom: 0;
+                                        }
+                                    }
+                                    .w-box-c{
+                                        h1{
+                                            font-size: 16px;
+                                            line-height: 36px;
+                                            color: #ffffff;
+                                            margin-bottom: 0px;
+                                        }
+                                        p{
+                                            color: #ccc;
+                                            
+                                            margin-bottom: 0;
+                                        }
+                                    }
+                                    .w-box-layout{
+                                        display: grid;
+                                        grid-template-columns: 1fr 2fr;
+                                        align-items: center;
+                                        grid-gap: 20px;
+                                        .w-img-box{
+                                            overflow: hidden;
+                                            
+                                            img{
+                                                border-radius: 100%;
+                                                width: 100%;
+                                            }
+                                        }
+                                        .w-text-box{
+                                            h1{
+                                                color: #ccc;
+                                                margin-bottom: 5px;
+                                            }
+                                            p{
+                                                font-size: 12px;
+                                                color: #8a8a8a;
+                                                line-height: 14px;
+                                                margin-bottom: 0;
+                                            }
+                                        }
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+                    .sec2{
+                        background: #ffffff;
+                        padding: 50px 100px 50px 100px;
+                        .grid-col{
+                            .col1-box{
+                                padding-top: 25px;
+                                svg{
+                                    margin-bottom: 20px;
+                                }
+                            }
+                        }
+                    }
+                    .sec3{
+                        background: #E5E5E5;
+                        padding: 80px 60px;
+
+                        .grid-col{
+                            .col1-box{
+                                padding-top: 25px;
+                                svg{
+                                    margin-bottom: 20px;
+                                }
+                            }
+                        }
+                    }
+                    .sec4{
+                        background: #ffffff;
+                        padding: 80px 60px;
+                        margin-bottom: 50px;
+                        .grid-col{
+                            .grid-l{
+                                display: grid;
+                                grid-template-rows: 1fr 1fr 1fr;
+                                align-items: center;
+                            }
+                            .grid-r{
+
+                            }
+                            .col1-box{
+                                display: grid;
+                                grid-template-columns: 15% 1fr;
+                                svg{
+                                    width: 30px;
+                                }
+                                P{
+                                    margin-bottom: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .r-sec{
+                    width: 100%;
+                    background: #000000;
+                    .r-sec1{
+                        position: relative;
+                        .img-box{
+                            position: relative;
+                            width: 100%;
+                            img{
+                                width: 100%;
+                                height: 100vh;
+                                object-fit: cover;
+                            }
+                        }
+                        .r-sec-title{
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            h1{
+                                color: #ffffff;
+                                font-size: 76px;
+                                margin-bottom: 0;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}

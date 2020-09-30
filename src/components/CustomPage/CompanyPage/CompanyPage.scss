@@ -1,0 +1,99 @@
+.companyPage{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #000000;
+    // background: #191b1d;
+    //     background-image: url('../../assets/download.png');
+    // background: #35075e;
+    // background: -webkit-gradient(linear,left top,right top,from(#35075e),to(#001236));
+    // background: linear-gradient(90deg,#35075e,#001236);
+
+    .grid-col{
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        .l-col{
+            position: relative;
+            .img-box{
+                width: 100%;
+                height: 100vh;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+    .top-box{
+        width: 100%;
+        /* height: 100vh; */
+        /* height: 100%; */
+        position: absolute;
+        bottom: 100px;
+        // top: 50%;
+        // transform: translateY(-50%);
+        column-count: 8;
+        grid-column-gap: 20px;
+        grid-column-gap: 20px;
+        grid-column-gap: 20px;
+        /* column-gap: 20px; */
+        /* padding: 0 100px; */
+        z-index: 1;
+        .img-box{
+            padding: 30px;
+            width: 100%;
+            img{
+                width: 100%;
+                opacity: 0.4;
+            }
+        }
+    }
+    .content-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        width: 52%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        h1{
+            font-weight: 700;
+            // color: #ba0c61;
+            color: #ccc;
+            font-size: 72px;
+            padding-bottom: 40px;
+            margin-bottom: 0;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        p{
+            color: #ccc;
+            font-size: 18px;
+            letter-spacing: 2px;
+            padding: 0 100px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .more-btn{
+            cursor: pointer;
+            background: linear-gradient(90deg, #4a0c84 19%, #c20a5e 100%);
+            width: -moz-fit-content;
+            width: fit-content;
+            padding: 15px 55px;
+            border-radius: 3.75rem;
+            transition: 0.3s;
+            a{
+                display: block;
+                text-transform: uppercase;
+                font-size: 12px;
+                color: #ffffff;
+                text-align: center;
+            }
+        }
+    }
+}

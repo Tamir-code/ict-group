@@ -1,0 +1,117 @@
+.footerPage{
+    position: relative;
+    background-color: #ffffff;
+    // background-image: url('http://ictexpo.mn/cdn/Untitled-1.jpg');
+    // background-size: cover;
+    // background-position: center center;
+    // background-repeat: no-repeat;
+
+    .footer-section{
+        position: relative;
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        z-index: 1;
+        .container{
+            width: calc(100% - 80px);
+            max-width: 1350px;
+            margin-left: auto;
+            margin-right: auto; 
+            padding-top: 120px;
+            padding-bottom: 120px;
+        }
+        .footerRow1{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            .l-row{
+                h1{
+                    font-size: 48px;
+                    font-weight: 300;
+                    color: #191b1d;
+                    letter-spacing: 4px;
+                    margin-bottom: 0;
+                }
+            }
+            .r-row{
+                display: flex;
+                justify-content: flex-end;
+                ul{
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    li{
+                        padding: 5px 0;
+                        a{
+                            position: relative;
+                            cursor: pointer;
+                            display: block;
+                            font-size: 16px;
+                            line-height: 24px;
+                            letter-spacing: 1px;
+                            color: #191b1d;
+                            width: fit-content;
+                            
+                            &:hover{
+                                text-decoration: none;
+                                transition: 0.9s;
+                                &::after{
+                                    content: "";
+                                    position: absolute;
+                                    bottom: 0;
+                                    left: 0;
+                                    height: 1px;
+                                    width: 100%;
+                                    background: #000;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .footerLinks{
+            padding-top: 10px;
+            .gridLinks{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-gap: 15px;
+                .gridWidget{
+                    h1{
+                        font-size: 16px;
+                        line-height: 24px;
+                        letter-spacing: 2px;
+                        color: #191b1d;
+                    }
+                    p{
+                        font-size: 16px;
+                        line-height: 24px;
+                        letter-spacing: 2px;
+                        color: #191b1d;
+                    }
+
+                }
+            }
+        }
+        .copyright{
+            padding: 30px 0;
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 100%;
+            transform: translateX(-50%);
+            p{
+                font-size: 10px;
+                line-height: 12px;
+                text-transform: uppercase;
+                color: #191b1d;
+                letter-spacing: 3px;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
